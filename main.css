@@ -1,0 +1,149 @@
+
+* {
+    font-family: "Inconsolata", monospace;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background: url("./assets/images/background-desktop.png");
+    color: hsl(0, 0%, 100%);
+  }
+  .mouse{
+    display: flex;
+    flex-direction: column;
+    border: hsl(245, 15%, 58%) dashed 2px ;
+    align-items: center;
+    justify-items: center;
+    padding: 1em 2.5em;
+    gap: 1.3em;
+    border-radius: 20px;
+  }
+  .mouse img{
+    width: 2em; 
+  }
+  #ticket{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    padding-top:2em ;
+  
+  }
+.blue{
+  text-align: center;
+  font-size: 37px; 
+  font-weight: bold;
+}
+small{
+  display: flex;
+}
+.bue{
+  border-radius: 1.5em;
+  font-size: 13px;
+  font-weight: 600;
+}
+  span{
+  background: linear-gradient(to right, hsl(7, 71%, 60%), #eee);
+  -webkit-background-clip: text;
+  color: transparent;
+  background-clip: text;
+
+  }
+  .image{
+    border: hsl(245, 15%, 58%) solid 1px;
+    background-color:transparent;
+    padding: 3px;
+    border-radius: 10px;
+  }
+  .red{
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+  }
+  h2 {
+    color: hsl(245, 15%, 58%);
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4em 2em;
+    gap: 2em;
+  }
+  h3, input{
+    color: white;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+  }
+  
+  .label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+ a{
+   text-decoration: none;
+  }
+  .button{
+    border-radius: 0.5em;;
+    padding: 20px  33px ;
+    display: flex;
+    /* align-self: center; */
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    text-decoration: none;
+    color:  hsl(248, 70%, 10%);
+    background-color: hsl(7, 88%, 67%);
+    font-size: .9em;
+    font-weight: 600;
+
+  }
+  input::placeholder{
+    color: white ;
+    font-weight: bold;
+  }
+  input {
+    background-color: hsl(245, 15%, 58%);
+    /* background: transparent; */
+    padding: 1em;
+    border-radius: 0.5em;
+    border: hsl(245, 15%, 58%) solid 2px;
+  }
+  /* .card{
+    position: relative;
+    display: inline-block;
+    align-self: center;
+
+  }
+  .theo{
+    width: 100%;
+    display: block
+
+  }
+  .card *:not(.theo){
+    position: absolute;
+    
+  }
+  .top{
+    top: 30px;                                        
+    left:20px ;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 2.5em;
+    height: 100% ;
+  }
+  .bottom{
+    top: 180px;
+    left: 20px;
+    display: flex;
+    flex-direction: row;
+  } */
+   .ticket-container{}
