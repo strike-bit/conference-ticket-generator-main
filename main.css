@@ -4,10 +4,14 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
   }
   body {
     background: url("./assets/images/background-desktop.png");
     color: hsl(0, 0%, 100%);
+    /* background-image: url("./assets/images/pattern-lines.svg"); */
+    /* background-image: url("./assets/images/pattern-squiggly-line-bottom-desktop.svg");
+    position: relative; */
   }
   .mouse{
     display: flex;
@@ -42,6 +46,8 @@ small{
   border-radius: 1.5em;
   font-size: 13px;
   font-weight: 600;
+  text-align: center;
+ color: hsl(245, 15%, 58%);
 }
   span{
   background: linear-gradient(to right, hsl(7, 71%, 60%), #eee);
@@ -146,4 +152,80 @@ small{
     display: flex;
     flex-direction: row;
   } */
-   .ticket-container{}
+   .ticket-container{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+   }
+  .ticket-image{
+    width: 100%;
+    display: block;   
+    height: auto; 
+
+  }
+  .ticket-header, .ticket-body{
+    position: absolute;
+
+  }
+  .ticket-header{
+    width: 100%;
+    top: 15%;
+    left: 0;
+    display: flex;
+    padding: 0 30px;
+    flex-direction: column;
+    width: 300px;
+    height: 250px;
+    gap: .2em;
+  }
+  .ticket-body{
+    left:0;
+    bottom: 20%;
+    font-size: .8em;
+    font-weight: 600;
+    display: flex;
+    padding: 0 30px;
+    gap: 1em;
+  }
+  .open{
+    height: 50px;
+    width: 50px;
+  border-radius: 10px;
+   
+  }
+  .ticket-date{
+    font-size: .8em;
+  }
+  .ticket-github{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 0.5em;
+  }
+  .side-digit{
+    position: absolute;
+    bottom:50% ;
+    left: 85%;
+    color: hsl(245, 15%, 58%);
+    transform: rotate (90deg);
+    transform-origin:left top ;
+    transform: rotate(-90deg);
+    transform-origin: left bottom;
+    margin-left:30px ;
+    font-size: 1em;
+    top:40%;
+     }
+      @media screen and (max-width: 400px){
+     .ticket-image{
+      width: 370px;
+      display: flex;
+      align-self: center;
+      
+     }
+      }
+      .tiny{
+        gap: 1em;
+      }
