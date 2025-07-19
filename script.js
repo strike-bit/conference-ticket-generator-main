@@ -43,41 +43,39 @@ function generateTicket() {
     const form = document.getElementById("form");
     const nameInput = document.getElementById("name");
     const github = document.getElementById("GitHub");
-     const emailInput = document.getElementById("email")
+    const emailInput = document.getElementById("email");
 
     const ticketGithub = document.getElementById("ticket-git-hub");
     const ticketName = document.getElementById("ticket-name");
-    const spanName = document.getElementById("spaning");
+    const spanName = document.getElementById("span");
     const spanEmail = document.getElementById("emails");
     const ticketId = document.getElementById("side-digit");
-    // const ticketEmail = document.getElementById("ticket-email"); 
 
     form.addEventListener("submit", function (e) {
         e.preventDefault();
 
-        const name = nameInput.value;
-        const gitUser = github.value;
-        // const userEmail = email.value;
+        const name = nameInput.value.trim();
+        const gitUser = github.value.trim();
+        const email = emailInput.value.trim();
 
-        if (name.trim() === "") {
-            alert("Please enter your name.");
-            return ;
+        if (!name || !gitUser || !email) {
+            alert("Please fill in all the fields.");
+            return;
         }
-        spanName.textContent = nameInput.value
-        spanEmail.textContent = emailInput.value;
+
+        spanName.textContent = name;
+        spanEmail.textContent = email;
         ticketName.textContent = name;
         ticketGithub.textContent = gitUser;
-        
+
         ticketId.textContent = Math.floor(1000 + Math.random() * 9000);
-        // if (ticketEmail) ticketEmail.textContent = userEmail;
 
         document.getElementById("ticket").style.display = "block";
 
-        // Optional: Clear inputs
         nameInput.value = "";
         github.value = "";
-         emailInput.value = "";
+        emailInput.value = "";
     });
 }
 
-generateTicket();
+generateTicket(); 
